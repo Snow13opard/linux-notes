@@ -1,0 +1,33 @@
+These simple instructions will show you how to install Dropbox via command line on a ubuntu server!
+
+First you will need to install Dropbox with this command.
+
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+
+After Dropbox is installed use this command to start the daemon.
+
+~/.dropbox-dist/dropboxd
+
+When Dropbox starts, It will have a link pop for to copy and put in your web browser to connect the server with Dropbox your account.
+If you did this correctly it should say Dropbox has succesfully been linked to your account!
+Now before we can finish you will need to restart your server.
+
+Before we finish off lets install the Dropbox CLI(Command Line Interface)
+
+Simply download the dropbox.py file into your server with this
+
+cd /sbin && wget https://linux.dropbox.com/packages/dropbox.py
+
+Now you will need to give dropbox.py file permission to run
+
+chmod +x ~/sbin/dropbox.py
+
+To start Dropbox backup again you can do so by typing
+
+dropbox.py start
+
+Also to check sync status of your Dropbox you can put this in your command line
+
+dropbox.py filestatus
+
+Hope you have enjoyed the tutorial! =]
