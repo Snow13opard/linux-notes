@@ -1,0 +1,8 @@
+# Move vpnserver to Dropbox:
+cd /usr/local
+
+mv vpnserver /home/USER/Dropbox
+
+ln -s /home/USER/Dropbox/vpnserver vpnserver
+
+ls -l
