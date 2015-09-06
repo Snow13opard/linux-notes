@@ -1,0 +1,15 @@
+Creating Sym Links In Ubuntu Server
+
+Let's create a sym link from "/var/etc/thingsgetwhatever" to "/home/USER/random"
+
+cd /var/etc
+
+rm -r thingsgetwhatever
+
+ln -s /var/etc/thingsgetwhatever /home/USER/random
+
+Check to see for a sym link:
+
+ls -l
+
+Make sure to replace "USER" with the name of the linux user.
