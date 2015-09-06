@@ -6,7 +6,7 @@ cd /var/etc
 
 rm -r thingsgetwhatever
 
-ln -s /var/etc/thingsgetwhatever /home/USER/random
+ln -s /home/USER/random thingsgetwhatever
 
 Check to see for a sym link:
 
