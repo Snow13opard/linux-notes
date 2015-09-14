@@ -1,0 +1,18 @@
+SystemCtl
+
+systemctl start app.service
+systemctl stop app.service
+systemctl restart app.service
+systemctl enable app.service
+systemctl status app.service
+
+example: sudo systemctl status ssh
+
+sudo systemctl enable app.service
+sudo systemctl disable app.service
+
+example: sudo systemctl disable ssh
+
+systemctl --failed
+
+journalctl -f
