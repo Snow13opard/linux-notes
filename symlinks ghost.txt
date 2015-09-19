@@ -2,7 +2,7 @@ cd /var/www/ghost
 
 rm -r saved
 
-ln -s ~/Dropbox saved
+ln -s /Users/codys/Dropbox saved
 
 Check to see for a sym link:
 
