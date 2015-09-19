@@ -1,0 +1,9 @@
+cd /var/www/ghost
+
+rm -r saved
+
+ln -s ~/Dropbox saved
+
+Check to see for a sym link:
+
+ls -l
