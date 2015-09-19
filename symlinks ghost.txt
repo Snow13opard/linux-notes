@@ -1,6 +1,6 @@
 cd /var/www/ghost
 
-rm -r saved
+mv saved saved-original
 
 ln -s /Users/USER/Dropbox saved
 
