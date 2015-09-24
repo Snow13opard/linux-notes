@@ -1,0 +1,15 @@
+# Enabling automatic updates for Ubuntu Server 14.04
+
+Install:
+sudo apt-get install unattended-upgrades
+
+Configure:
+nano /etc/apt/apt.conf.d/50unattended-upgrades
+
+Unattended-Upgrade::Allowed-Origins {
+        "Ubuntu trusty-security";
+//      "Ubuntu trusty-updates";
+};
+
+Note:
+Anything with "//" will not be used by the proccess.
