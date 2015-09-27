@@ -1,0 +1,14 @@
+var1=1
+var2=2
+# var3 is unset.
+
+echo ${var1-$var2}   # 1
+echo ${var3-$var2}   # 2
+#           ^          Note the $ prefix.
+
+# So, since var3 Is not set the output will look like:
+# 1
+# 2
+# However If var3 where to be set as "3" for example, the output will turn out otherwise:
+# 1
+# 3
