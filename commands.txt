@@ -1,0 +1,4 @@
+for f in some/kind/of/folder/*zip
+do
+    yes | unzip $f
+done
