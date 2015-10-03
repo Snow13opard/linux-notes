@@ -7,5 +7,5 @@ read yesno
 
 if [ $yesno = y* ]
         then ~/.dropbox-dist/dropboxd && dropbox.py restart | sleep 3
-        else echo "ok"
+        else exit 1
 fi
