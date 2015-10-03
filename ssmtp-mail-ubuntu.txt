@@ -12,3 +12,7 @@ UseTLS=YES
 
 ssmtp recipient_name@gmail.com < message.txt
  
+Send logs:
+timestamp=$(date)
+echo "Input stream for $timestamp:" > message.txt
+cat /var/log/nginx/ghostblog.log >> message.txt
