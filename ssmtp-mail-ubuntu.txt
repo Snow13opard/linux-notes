@@ -1,0 +1,14 @@
+sudo apt-get install ssmtp
+
+sudo nano /etc/ssmtp/ssmtp.conf
+
+root=username@gmail.com
+mailhub=smtp.gmail.com:465
+rewriteDomain=gmail.com
+AuthUser=username
+AuthPass=password
+FromLineOverride=YES
+UseTLS=YES
+
+ssmtp recipient_name@gmail.com < message.txt
+ 
