@@ -1,0 +1,5 @@
+if curl -s https://dl.dropboxusercontent.com/u/65211911/test.html  | grep -q 'iso777'; then
+echo "test worked"
+else
+echo "test failed"
+fi
