@@ -18,4 +18,13 @@ echo "Input stream for $timestamp:" > message.txt
 cat /var/log/nginx/ghostblog.log >> message.txt
 
 Another way of sending mail:
+
+nano /etc/ssmtp/ssmtp.conf
+
+AuthUser=username@gmail.com
+AuthPass=password
+FromLineOverride=YES
+mailhub=smtp.gmail.com:587
+UseSTARTTLS=YES
+
 echo "This is a test" | mail -s "Test" username@gmail.com
