@@ -16,3 +16,6 @@ Send logs:
 timestamp=$(date)
 echo "Input stream for $timestamp:" > message.txt
 cat /var/log/nginx/ghostblog.log >> message.txt
+
+Another way of sending mail:
+echo "This is a test" | mail -s "Test" username@gmail.com
