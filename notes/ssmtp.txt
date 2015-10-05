@@ -8,4 +8,11 @@ FromLineOverride=YES
 mailhub=smtp.gmail.com:587
 UseSTARTTLS=YES
 
+Also, make sure you disable Sendmail:
+# service sendmail stop
+# chkconfig sendmail off
+# mkdir /root/.bakup
+# mv /usr/sbin/sendmail /root/.bakup
+# ln -s /usr/local/ssmtp/sbin/ssmtp /usr/sbin/sendmail
+
 echo "This is a test" | mail -s "Test" username@gmail.com
