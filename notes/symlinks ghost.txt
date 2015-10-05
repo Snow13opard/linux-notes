@@ -1,9 +1,0 @@
-cd /var/www/ghost
-
-mv saved saved-original
-
-ln -s /Users/USER/Dropbox saved
-
-Check to see for a sym link:
-
-ls -l
